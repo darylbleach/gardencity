@@ -273,6 +273,11 @@ footer {
   background: linear-gradient(to bottom, #004643 0%,#006e6a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004643', endColorstr='#006e6a',GradientType=0 );
   padding: 20px 0;
+  color: #fff;
+}
+
+footer a {
+  color: #fff;
 }
 
 footer ul {
