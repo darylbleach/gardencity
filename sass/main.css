@@ -1,0 +1,318 @@
+body {
+  background: #fbf8f2;
+  font-family: 'Open Sans', Arial, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  font-family: 'Open Sans', Arial, serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #006864;
+}
+
+
+p, li, dl {
+  font-size: 12px;
+}
+
+p.quote {
+  font-size: 20px;
+  color: #006864;
+  font-style: italic;
+}
+
+p.quote:before,
+p.quote:after {
+  content:'"';
+}
+
+.content {
+  padding: 20px 10px;
+  background: #fff;
+}
+
+.slider .img-title {
+  background: #006864;
+  color: #fff;
+  text-align: center;
+}
+
+.slider .img-title p {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.location-img {
+  margin-bottom: 20px;
+}
+
+.location-img img {
+  width: 100%;
+}
+
+.bungalow {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.bungalow img {
+  width: 100%;
+}
+
+.bungalow-copy {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  padding:10px 20px;
+  background: rgba(0,71,68,0.8);
+  left: 0.9375rem;
+  right: 0.9375rem;
+}
+
+.bungalow-copy span {
+  width: 100%;
+  color: #fff;
+}
+
+.bungalow-copy span.title {
+  display: block;
+  font-weight: bold;
+}
+
+.bungalow-copy span.rooms,
+.bungalow-copy span.price {
+  display: inline-block;
+  width: 50%
+}
+
+.bungalow-copy span.price {
+  float: right;
+  text-align: right;
+}
+
+.accordion .accordion-navigation > a, 
+.accordion dd > a {
+  font-size: 12px;
+  font-weight: 600;
+  background: #004744;
+  color: #fff;
+  margin: 1px 0;
+  padding: 10px;
+  position: relative;
+}
+
+.accordion .accordion-navigation > a span, 
+.accordion dd > a span {
+  width: 90%;
+  display: block;
+}
+
+.accordion .accordion-navigation > a span:after, 
+.accordion dd > a span:after {
+  content: "\f078";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+/*--adjust as necessary--*/
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.accordion .accordion-navigation > a:hover, 
+.accordion dd > a:hover {
+  background: #004744;
+}
+
+.accordion .accordion-navigation.active > a, 
+.accordion dd.active > a {
+  background: #004744;
+  color: #fff;
+  position:relative;
+}
+
+.accordion .accordion-navigation.active > a span:after, 
+.accordion dd.active > a span:after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+/*--adjust as necessary--*/
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.accordion .accordion-navigation > .content, .accordion dd > .content {
+  padding: 10px;
+  position:relative;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+header {
+  background: #004643;
+  background: -moz-linear-gradient(top, #004643 0%, #006e6a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004643), color-stop(100%,#006e6a));
+  background: -webkit-linear-gradient(top, #004643 0%,#006e6a 100%); 
+  background: -o-linear-gradient(top, #004643 0%,#006e6a 100%); 
+  background: -ms-linear-gradient(top, #004643 0%,#006e6a 100%);
+  background: linear-gradient(to bottom, #004643 0%,#006e6a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004643', endColorstr='#006e6a',GradientType=0 );
+}
+
+header p.phone,
+header p.email {
+  display: inline-block;
+  color: #fff;
+  margin: 5px 10px 10px 0;
+  font-size: 16px;
+}
+
+.contact-head {
+  text-align: right;
+}
+
+.tag-line, 
+.logo {
+  position: relative;
+  font-family: 'Helvetica', Arial, serif;
+  font-weight: bold;
+  color: #fff;
+  margin: 5px auto 8px;
+}
+ 
+.tag-line p,
+.logo p {
+  position: absolute;
+  top: 55px;
+  font-size: 20px;
+}
+
+.nav {
+  background: #004744;
+  margin-top: 15px;
+}
+
+.nav .mobile-nav {
+  display: none;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+}
+    
+.nav li a {
+  line-height: 33px; 
+  padding: 0 10px;
+  color: #fff;
+  display: block;
+}
+
+.nav li a:hover {
+  background: #d1b26c;
+}
+
+.sidebar__inner {
+  background: #fbf8f2;
+  padding: 10px;
+}
+
+.sidebar__header {
+  background: #006864;
+}
+
+.sidebar__header h2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  color: #fff;
+  margin: 0 20px;
+}
+
+footer {
+  background: #004643;
+  background: -moz-linear-gradient(top, #004643 0%, #006e6a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#004643), color-stop(100%,#006e6a));
+  background: -webkit-linear-gradient(top, #004643 0%,#006e6a 100%); 
+  background: -o-linear-gradient(top, #004643 0%,#006e6a 100%); 
+  background: -ms-linear-gradient(top, #004643 0%,#006e6a 100%);
+  background: linear-gradient(to bottom, #004643 0%,#006e6a 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#004643', endColorstr='#006e6a',GradientType=0 );
+  padding: 20px 0;
+}
+
+footer ul {
+  list-style: none;
+}
+
+@media screen and (max-width:991px) {
+  .nav .mobile-nav {
+    display: block;
+  }
+
+  .nav .mobile-nav a {
+    color: #fff;
+    font-size: 24px;
+  }
+
+  .nav .mobile-nav a span {
+    font-size: 20px;
+  }
+
+  .nav ul {
+    display: none;
+  }
+
+  .nav li {
+    display: block;
+  }
+  .nav li a {
+    line-height: 33px; 
+    padding: 0;
+    color: #fff;
+    display: block;
+  }
+  .nav li a:hover {
+    background: transparent;
+    text-decoration: underline;
+  }
+
+  .tag-line {
+    display: none;
+  }
+}
+

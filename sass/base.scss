@@ -1,0 +1,177 @@
+body {
+  background: #fbf8f2;
+  font-family: 'Open Sans', Arial, serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  font-family: 'Open Sans', Arial, serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #006864;
+}
+
+
+p, li, dl {
+  font-size: 12px;
+}
+
+p.quote {
+  font-size: 20px;
+  color: #006864;
+  font-style: italic;
+
+  &:before,
+  &:after {
+    content:'"';
+  }
+}
+
+.content {
+  padding: 20px 10px;
+  background: #fff;
+}
+
+.slider {
+  .img-title {
+    background: #006864;
+    color: #fff;
+    text-align: center;
+
+    p {
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+}
+
+.location-img {
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.bungalow {
+  position: relative;
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+  }
+
+  .bungalow-copy {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    padding:10px 20px;
+    background: rgba(0,71,68,0.8);
+    left: 0.9375rem;
+    right: 0.9375rem;
+
+    span {
+      width: 100%;
+      color: #fff;
+
+      &.title {
+        display: block;
+        font-weight: bold;
+      }
+
+      &.rooms,
+      &.price {
+        display: inline-block;
+        width: 50%
+      }
+
+      &.price {
+        float: right;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.accordion .accordion-navigation > a, .accordion dd > a {
+  font-size: 12px;
+  font-weight: 600;
+  background: #004744;
+  color: #fff;
+  margin: 1px 0;
+  padding: 10px;
+  position: relative;
+
+  span {
+    width: 90%;
+    display: block;
+  }
+
+
+  &:after {
+    content: "\f078";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+  background: #004744;
+}
+
+.accordion .accordion-navigation.active > a, .accordion dd.active > a {
+  background: #004744;
+  color: #fff;
+  position:relative;
+
+  &:after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+/*--adjust as necessary--*/
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+.accordion .accordion-navigation > .content, .accordion dd > .content {
+  padding: 10px;
+  position:relative;
+
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%; // This is the aspect ratio
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
